@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khuthala Youth Development Centre</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4361ee',
+                        secondary: '#3a0ca3',
+                        accent: '#f72585',
+                        light: '#f8f9fa',
+                        dark: '#212529',
+                        success: '#4cc9f0',
+                        warning: '#f8961e',
+                        info: '#4895ef'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Poppins', 'sans-serif']
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.5s ease-in-out',
+                        'float': 'float 3s ease-in-out infinite'
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' }
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-sans bg-light text-dark">
+    <!-- Navigation -->
+    <nav class="bg-white/90 backdrop-blur-md shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <img id="logo" src="WhatsApp Image 2025-04-18 at 16.05.26.jpeg" alt="Khuthala Logo" class="h-12 rounded-lg">
+                <span class="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">Khuthala YDC</span>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#home" class="text-dark hover:text-accent font-medium transition-colors">Home</a>
+                <a href="#services" class="text-dark hover:text-accent font-medium transition-colors">Services</a>
+                <a href="#objectives" class="text-dark hover:text-accent font-medium transition-colors">Objectives</a>
+                <a href="#contact" class="text-dark hover:text-accent font-medium transition-colors">Contact</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-dark">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-md pb-4 px-4 shadow-md">
+            <a href="#home" class="block py-3 border-b border-gray-100 text-dark hover:text-accent transition-colors">Home</a>
+            <a href="#services" class="block py-3 border-b border-gray-100 text-dark hover:text-accent transition-colors">Services</a>
+            <a href="#objectives" class="block py-3 border-b border-gray-100 text-dark hover:text-accent transition-colors">Objectives</a>
+            <a href="#contact" class="block py-3 text-dark hover:text-accent transition-colors">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/10 -z-10"></div>
+        <div class="container mx-auto px-4 py-24 md:py-32 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 font-display bg-gradient-to-r from-primary to-accent text-transparent bg-clip-text">
+                Khuthala Youth<br>Development Centre
+            </h1>
+            <div class="max-w-3xl mx-auto">
+                <p class="text-xl md:text-2xl mb-8 font-medium text-dark/90">Actively unlocking young people's fullest potential</p>
+                <p class="text-lg md:text-xl text-dark/80">To create platforms that will encourage young people to reach their full potential</p>
+                <div class="mt-10">
+                    <a href="#contact" class="inline-block bg-accent text-white px-8 py-3 rounded-full font-medium hover:bg-primary transition-all transform hover:scale-105 shadow-lg hover:shadow-accent/30">
+                        Get Involved
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white to-transparent"></div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="inline-block px-3 py-1 text-sm font-medium rounded-full bg-accent/10 text-accent mb-4">What We Offer</span>
+                <h2 class="text-3xl md:text-4xl font-bold font-display mb-4">Our Services</h2>
+                <p class="max-w-2xl mx-auto text-dark/70">Comprehensive programs designed to empower and develop the youth</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- ICT Skills -->
+                <div class="bg-light p-8 rounded-xl shadow-sm hover:shadow-md transition-all border border-white hover:border-accent/20 group">
+                    <div class="text-primary mb-6 group-hover:text-accent transition-colors">
+                        <i class="fas fa-laptop-code text-5xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 font-display">ICT Skills Program</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-success mr-2 mt-1"></i>
+                            <span>Computer skills development and training</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-success mr-2 mt-1"></i>
+                            <span>Microsoft Word, Excel, and PowerPoint</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-success mr-2 mt-1"></i>
+                            <span>Introduction to 4th Industrial Revolution</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-success mr-2 mt-1"></i>
+                            <span>Digital skills programmes with certificates</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Life Skills -->
+                <div class="bg-light p-8 rounded-xl shadow-sm hover:shadow-md transition-all border border-white hover:border-accent/20 group">
+                    <div class="text-primary mb-6 group-hover:text-accent transition-colors">
+                        <i class="fas fa-brain text-5xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 font-display">Life Skills Development</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-success mr-2 mt-1"></i>
+                            <span>Mind stimulating activities</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-success mr-2 mt-1"></i>
+                            <span>Awareness programmes on social skills</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-success mr-2 mt-1"></i>
+                            <span>Personal development workshops</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Educational Support -->
+                <div class="bg-light p-8 rounded-xl shadow-sm hover:shadow-md transition-all border border-white hover:border-accent/20 group">
+                    <div class="text-primary mb-6 group-hover:text-accent transition-colors">
+                        <i class="fas fa-graduation-cap text-5xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 font-display">Educational Support</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-success mr-2 mt-1"></i>
+                            <span>Homework assistance</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-success mr-2 mt-1"></i>
+                            <span>Bursary and Varsity applications</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-success mr-2 mt-1"></i>
+                            <span>Public speaking and career guidance</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-success mr-2 mt-1"></i>
+                            <span>Financial literacy training</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Leadership -->
+                <div class="bg-light p-8 rounded-xl shadow-sm hover:shadow-md transition-all border border-white hover:border-accent/20 group">
+                    <div class="text-primary mb-6 group-hover:text-accent transition-colors">
+                        <i class="fas fa-users text-5xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 font-display">Leadership & Mentorship</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-success mr-2 mt-1"></i>
+                            <span>Life skills training</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-success mr-2 mt-1"></i>
+                            <span>Youth volunteer programs</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-success mr-2 mt-1"></i>
+                            <span>Community change initiatives</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Environmental -->
+                <div class="bg-light p-8 rounded-xl shadow-sm hover:shadow-md transition-all border border-white hover:border-accent/20 group">
+                    <div class="text-primary mb-6 group-hover:text-accent transition-colors">
+                        <i class="fas fa-leaf text-5xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 font-display">Environmental Support</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-success mr-2 mt-1"></i>
+                            <span>Environmental rehabilitation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-success mr-2 mt-1"></i>
+                            <span>Natural resources management</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-success mr-2 mt-1"></i>
+                            <span>Green economy initiatives</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Additional Card for Visual Balance -->
+                <div class="bg-gradient-to-br from-primary to-accent p-8 rounded-xl shadow-md text-white">
+                    <div class="mb-6">
+                        <i class="fas fa-star text-5xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 font-display">Join Our Community</h3>
+                    <p class="mb-6">Become part of a vibrant youth network dedicated to growth and development</p>
+                    <a href="#contact" class="inline-block bg-white text-primary px-6 py-2 rounded-full font-medium hover:bg-light transition-all">
+                        Connect With Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Objectives Section -->
+    <section id="objectives" class="py-16 bg-gradient-to-br from-primary/5 to-accent/5">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="inline-block px-3 py-1 text-sm font-medium rounded-full bg-accent/10 text-accent mb-4">Our Purpose</span>
+                <h2 class="text-3xl md:text-4xl font-bold font-display mb-4">Our Objectives</h2>
+                <p class="max-w-2xl mx-auto text-dark/70">Guiding principles that drive our mission forward</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-white hover:border-accent/20 transition-all">
+                    <h3 class="text-xl font-bold mb-6 font-display text-primary">Empowerment</h3>
+                    <ul class="space-y-5">
+                        <li class="flex items-start">
+                            <div class="bg-primary/10 text-primary rounded-full p-2 mr-4">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <span>Discover and nurture passionate leaders with vision</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="bg-primary/10 text-primary rounded-full p-2 mr-4">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <span>Equip youth with information and life skills</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="bg-primary/10 text-primary rounded-full p-2 mr-4">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <span>Foster independence and entrepreneurship</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-white hover:border-accent/20 transition-all">
+                    <h3 class="text-xl font-bold mb-6 font-display text-primary">Opportunity</h3>
+                    <ul class="space-y-5">
+                        <li class="flex items-start">
+                            <div class="bg-primary/10 text-primary rounded-full p-2 mr-4">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <span>Create job opportunities through partnerships</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="bg-primary/10 text-primary rounded-full p-2 mr-4">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <span>Develop professional skills for career success</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="bg-primary/10 text-primary rounded-full p-2 mr-4">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <span>Promote sports, arts and cultural initiatives</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="bg-primary/10 text-primary rounded-full p-2 mr-4">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <span>Address socio-economic and climate issues</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-16 bg-primary text-white">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div class="p-6">
+                    <div class="text-4xl font-bold font-display mb-2" id="youth-count">0</div>
+                    <div class="text-light/80">Youth Empowered</div>
+                </div>
+                <div class="p-6">
+                    <div class="text-4xl font-bold font-display mb-2" id="programs-count">0</div>
+                    <div class="text-light/80">Programs Offered</div>
+                </div>
+                <div class="p-6">
+                    <div class="text-4xl font-bold font-display mb-2" id="community-count">0</div>
+                    <div class="text-light/80">Community Impact</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="inline-block px-3 py-1 text-sm font-medium rounded-full bg-accent/10 text-accent mb-4">Success Stories</span>
+                <h2 class="text-3xl md:text-4xl font-bold font-display mb-4">What Our Youth Say</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-light p-8 rounded-xl shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary mr-4">
+                            <i class="fas fa-user text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Thando M.</h4>
+                            <div class="flex text-warning">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-dark/80">"The ICT program gave me skills that helped me land my first job. I'm forever grateful to Khuthala for this opportunity!"</p>
+                </div>
+                
+                <div class="bg-light p-8 rounded-xl shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary mr-4">
+                            <i class="fas fa-user text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Lerato K.</h4>
+                            <div class="flex text-warning">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-dark/80">"The leadership training changed my perspective on life. I now run a small business in my community thanks to Khuthala."</p>
+                </div>
+                
+                <div class="bg-light p-8 rounded-xl shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary mr-4">
+                            <i class="fas fa-user text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Sipho D.</h4>
+                            <div class="flex text-warning">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-dark/80">"The environmental program taught me how to make a difference in my community. We've started a recycling initiative!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gradient-to-br from-primary/5 to-accent/5">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="inline-block px-3 py-1 text-sm font-medium rounded-full bg-accent/10 text-accent mb-4">Get In Touch</span>
+                <h2 class="text-3xl md:text-4xl font-bold font-display mb-4">Contact Us</h2>
+                <p class="max-w-2xl mx-auto text-dark/70">We'd love to hear from you and answer any questions</p>
+            </div>
+            
+            <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
+                <div>
+                    <div class="bg-white p-8 rounded-xl shadow-sm mb-8">
+                        <h3 class="text-xl font-semibold mb-6 font-display">Social Media</h3>
+                        <div class="space-y-5">
+                            <a href="#" class="flex items-center group">
+                                <div class="w-12 h-12 rounded-full bg-primary/10 text-primary flex items-center justify-center mr-4 group-hover:bg-primary group-hover:text-white transition-colors">
+                                    <i class="fab fa-facebook-f text-lg"></i>
+                                </div>
+                                <span class="font-medium group-hover:text-accent transition-colors">Khuthala Youth Development Center</span>
+                            </a>
+                            <a href="#" class="flex items-center group">
+                                <div class="w-12 h-12 rounded-full bg-primary/10 text-primary flex items-center justify-center mr-4 group-hover:bg-primary group-hover:text-white transition-colors">
+                                    <i class="fab fa-instagram text-lg"></i>
+                                </div>
+                                <span class="font-medium group-hover:text-accent transition-colors">khuthala_YDC</span>
+                            </a>
+                            <a href="#" class="flex items-center group">
+                                <div class="w-12 h-12 rounded-full bg-primary/10 text-primary flex items-center justify-center mr-4 group-hover:bg-primary group-hover:text-white transition-colors">
+                                    <i class="fab fa-tiktok text-lg"></i>
+                                </div>
+                                <span class="font-medium group-hover:text-accent transition-colors">khuthala_YDC</span>
+                            </a>
+                            <a href="mailto:khuthalayouthcenter@gmail.com" class="flex items-center group">
+                                <div class="w-12 h-12 rounded-full bg-primary/10 text-primary flex items-center justify-center mr-4 group-hover:bg-primary group-hover:text-white transition-colors">
+                                    <i class="fas fa-envelope text-lg"></i>
+                                </div>
+                                <span class="font-medium group-hover:text-accent transition-colors">khuthalayouthcenter@gmail.com</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-8 rounded-xl shadow-sm">
+                        <h3 class="text-xl font-semibold mb-6 font-display">Visit Us</h3>
+                        <div class="space-y-5">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 rounded-full bg-primary/10 text-primary flex items-center justify-center mr-4">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Location</h4>
+                                    <p class="text-dark/80">123 Youth Street, Empowerment District</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 rounded-full bg-primary/10 text-primary flex items-center justify-center mr-4">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Operating Hours</h4>
+                                    <p class="text-dark/80">Monday - Friday: 8:00 AM - 5:00 PM</p>
+                                    <p class="text-dark/80">Saturday: 9:00 AM - 1:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="bg-white p-8 rounded-xl shadow-sm h-full">
+                        <h3 class="text-xl font-semibold mb-6 font-display">Send Us a Message</h3>
+                        <form id="contactForm" class="space-y-5">
+                            <div>
+                                <label for="name" class="block text-sm font-medium mb-1">Your Name</label>
+                                <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium mb-1">Your Email</label>
+                                <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                            </div>
+                            <div>
+                                <label for="subject" class="block text-sm font-medium mb-1">Subject</label>
+                                <input type="text" id="subject" name="subject" required class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium mb-1">Your Message</label>
+                                <textarea id="message" name="message" rows="5" required class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-gradient-to-r from-primary to-accent text-white px-6 py-3 rounded-lg font-medium hover:from-primary/90 hover:to-accent/90 transition-all transform hover:scale-[1.01] shadow-md">
+                                Send Message
+                            </button>
+                            <div id="formMessage" class="hidden p-3 rounded-lg text-center"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <img id="logo" src="WhatsApp Image 2025-04-18 at 16.05.26.jpeg" alt="Khuthala Logo" class="h-10 rounded-lg">
+                        <span class="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">Khuthala YDC</span>
+                    </div>
+                    <p class="text-light/70 mb-4">Actively unlocking young people's fullest potential through comprehensive development programs.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-dark/20 flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-dark/20 flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-dark/20 flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="mailto:khuthalayouthcenter@gmail.com" class="w-10 h-10 rounded-full bg-dark/20 flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4 font-display">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-light/70 hover:text-primary transition-colors">Home</a></li>
+                        <li><a href="#services" class="text-light/70 hover:text-primary transition-colors">Services</a></li>
+                        <li><a href="#objectives" class="text-light/70 hover:text-primary transition-colors">Objectives</a></li>
+                        <li><a href="#contact" class="text-light/70 hover:text-primary transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4 font-display">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-light/70 hover:text-primary transition-colors">ICT Skills Program</a></li>
+                        <li><a href="#" class="text-light/70 hover:text-primary transition-colors">Life Skills Development</a></li>
+                        <li><a href="#" class="text-light/70 hover:text-primary transition-colors">Educational Support</a></li>
+                        <li><a href="#" class="text-light/70 hover:text-primary transition-colors">Environmental Programs</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4 font-display">Contact Info</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-primary mr-3 mt-1"></i>
+                            <span class="text-light/70">123 Youth Street, Empowerment District</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope text-primary mr-3 mt-1"></i>
+                            <span class="text-light/70">khuthalayouthcenter@gmail.com</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone-alt text-primary mr-3 mt-1"></i>
+                            <span class="text-light/70">+27 12 345 6789</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="pt-8 border-t border-dark/20 text-center text-light/50">
+                <p>&copy; <span id="currentYear"></span> Khuthala Youth Development Centre. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    mobileMenu.classList.add('hidden');
+                    
+                    // Scroll to target
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Animated counters
+        function animateCounter(elementId, target, duration = 2000) {
+            const element = document.getElementById(elementId);
+            const start = 0;
+            const increment = target / (duration / 16);
+            let current = start;
+            
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    clearInterval(timer);
+                    current = target;
+                }
+                element.textContent = Math.floor(current).toLocaleString();
+            }, 16);
+        }
+
+        // Check if element is in viewport
+        function isInViewport(element) {
+            const rect = element.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+
+        // Animate counters when scrolled into view
+        let countersAnimated = false;
+        window.addEventListener('scroll', function() {
+            const statsSection = document.querySelector('section.bg-primary');
+            if (isInViewport(statsSection) && !countersAnimated) {
+                animateCounter('youth-count', 850);
+                animateCounter('programs-count', 12);
+                animateCounter('community-count', 15);
+                countersAnimated = true;
+            }
+        });
+
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Form submission with Formspree
+        const contactForm = document.getElementById('contactForm');
+        const formMessage = document.getElementById('formMessage');
+        
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(contactForm);
+            
+            // Show loading state
+            const submitButton = contactForm.querySelector('button[type="submit"]');
+            submitButton.disabled = true;
+            submitButton.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Sending...';
+            
+            // Using Formspree for form submission
+            fetch('https://formspree.io/f/your-form-id-here', {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            .then(response => {
+                if (response.ok) {
+                    formMessage.textContent = 'Thank you! Your message has been sent successfully.';
+                    formMessage.className = 'bg-success/10 text-success p-3 rounded-lg text-center';
+                    contactForm.reset();
+                } else {
+                    throw new Error('Network response was not ok');
+                }
+            })
+            .catch(error => {
+                formMessage.textContent = 'Oops! There was a problem sending your message. Please try again later.';
+                formMessage.className = 'bg-accent/10 text-accent p-3 rounded-lg text-center';
+            })
+            .finally(() => {
+                formMessage.classList.remove('hidden');
+                submitButton.disabled = false;
+                submitButton.textContent = 'Send Message';
+                
+                // Hide message after 5 seconds
+                setTimeout(() => {
+                    formMessage.classList.add('hidden');
+                }, 5000);
+            });
+        });
+
+        // Intersection Observer for animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        document.querySelectorAll('.bg-light, .bg-white').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
